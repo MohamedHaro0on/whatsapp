@@ -1,0 +1,10 @@
+.Button{
+    outline : none ;
+    border : none ;
+    cursor : pointer ;
+    padding : 8px 9px 6px 11px;
+    border-radius : 50% ;
+    &:focus{
+        background-color : rgb(230, 230, 230 ) ;
+    }
+}
