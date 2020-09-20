@@ -1,0 +1,20 @@
+@import "../../../App.module";
+
+.HeaderContainer {
+    background-color: $mainGrayColor;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $mainFontColor;
+    .ProfileImage {
+        max-height: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .ButtonsContainer {
+        min-width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

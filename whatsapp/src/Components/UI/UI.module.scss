@@ -1,3 +1,5 @@
+@import "../../App.module";
+
 .Button{
     outline : none ;
     border : none ;
@@ -6,5 +8,64 @@
     border-radius : 50% ;
     &:focus{
         background-color : rgb(230, 230, 230 ) ;
+    }
+}
+
+// Starting the Input Components SCSS ;
+
+.InputContainer{
+    padding : 10px 20px ;
+    box-shadow : 0 1px 3px rgba(0,0,0,.08) ;
+    display : flex ;
+    justify-content: space-between;
+    flex-wrap : wrap ;
+    align-items: center;
+    background-color : #fff ;
+    margin : 2px ;
+    label{
+        display : block ;
+        padding : 10px ;
+        color : $mainGreenColor ;
+        min-width: 100% ;
+    }
+    input{
+        border: none ;
+        outline : none ;
+        font-size: 20px ;
+        padding : 10px ;
+        color : #4a4a4a ;
+        font-weight: 100 ;
+        background-color : #fff ;
+        border : solid 2px #fff ;
+        &:enabled{
+            border-bottom-color :  $mainGreenColor ;
+        }
+    }
+    svg{
+        cursor : pointer ;
+    }
+}
+
+// Starting the SideBar.
+
+.SideBarContainer{
+    min-height : 100% ;
+    position : absolute ;
+    top : 0px ;
+    width :100% ;
+    background-color : $mainGrayColor; 
+    .SideBarTitle{
+        background-color : $mainGreenColor ;
+        margin : 0px ;
+        padding : 10px ;
+        display : flex ;
+        align-items: flex-end ;
+        min-height : 83px ;
+        color : #fff ;
+        font-weight : 400 ;
+        svg{
+            padding-right : 20px; 
+            cursor : pointer ;
+        }
     }
 }

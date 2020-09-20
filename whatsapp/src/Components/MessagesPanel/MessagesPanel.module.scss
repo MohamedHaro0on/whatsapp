@@ -3,4 +3,7 @@
     min-height: 95%;
     min-width :75% ;
     background-color : #fff ;
+    @media (max-width:1211px) {
+        width: 100% ;
+    }
 }

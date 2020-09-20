@@ -1,5 +1,6 @@
+@import "../../App.module";
 .AppContainer{
-    background-color : #D9DBD4 ;
+    background-color : $mainDarkGrayColor ;
     min-height : 100vh ;
     position : relative ;
     display : flex ;
@@ -11,6 +12,6 @@
         top : 0px ;
         height : 125px ;
         position : absolute;
-        background-color : #009688 ;
+        background-color : $mainDarkGreenColor ;
     }
 }
