@@ -12,7 +12,7 @@ function SearchContacts() {
             <input
                 value = {searchTerm}
                 type  = "text"
-                onChnage = {handleSearchChange}
+                onChange = {handleSearchChange}
                 className = {ClassNames.SearchInput}
                 placeholder = "Search or state new chat"
             />
