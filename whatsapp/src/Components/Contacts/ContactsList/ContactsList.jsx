@@ -5,7 +5,7 @@ function ContactsList() {
     let  contacts = [] ;
     contacts  = useContext(ContactsContext);
     contacts = contacts.contacts ;
-    // console.log("The  Contacts from inside the Contacts Component" , contacts.contacts) ;
+    console.log("The  Contacts from inside the Contacts Component" , contacts) ;
     
     if (contacts.length > 0 ){
         return (
@@ -13,8 +13,17 @@ function ContactsList() {
                 <ul>
                     {contacts.map( (contact , index) =>{
                         return(
-                            <li key = {index}>
-                                this is the list item For the Contacts ;
+                            <li key = {index} title = "This is the Title for the Contact">
+                                <p>
+                                    <img src = {contact.profileImage} alt = "Contact Profile" className = {ClassNames.ProfileImage} />
+                                    <span>
+                                        {contact.name} <br/>
+                                        <i>Last Message.</i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <p> {contact.lastMessageTime}</p>
+                                </div>
                             </li>
                         )
                     })}

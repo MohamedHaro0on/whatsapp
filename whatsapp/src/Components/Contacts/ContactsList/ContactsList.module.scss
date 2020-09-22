@@ -1,7 +1,8 @@
 .ContactsList {
-    max-height: 94%;
-    overflow: auto;
-    border-right : solid 1px rgba(0,0,0,.8) ;
+    border-right : solid 2px rgba(0,0,0,.2)  ;
+    overflow: auto ;
+    height :84%;
+    top : 0px ;
     &::-webkit-scrollbar{
         width : 6px ;
     }
@@ -13,8 +14,37 @@
     }
     ul {
         padding: 0px;
+        margin-top: 0px ;
         li {
-            min-height: 200px;
+            padding-bottom: 10px  ;
+            border-bottom : solid 2px #ebebeb ;
+            display : flex ;
+            justify-content : space-between ;
+            cursor: pointer;
+            padding : 10px;
+            p{
+                clear: both ;
+                margin-bottom : 0px ;
+                .ProfileImage{
+                    border-radius : 50% ;
+                    max-height : 50px ;
+                    min-width : 50px ;
+                    float : left ;
+                    margin-right : 10px;
+                }
+                span{
+                    i{
+                        font-size : 12px !important;
+                    }
+                }
+            }
+            &:hover{
+                background-color : #ebebeb ;
+            }
         }
+    }
+
+    @media (max-width:609px) {
+        height : 75% ;
     }
 }

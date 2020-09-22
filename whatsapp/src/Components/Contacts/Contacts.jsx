@@ -1,4 +1,4 @@
-import React, { useState  , useEffect } from 'react'
+import React, { useState } from 'react'
 import Header from "./Header/Header";
 import ClassNames from "./Contacts.module.scss";
 import SearchContactsInput from "./SearchContacts/SearchContacts";

@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState  , memo} from 'react'
+import React, { createContext, useEffect, useState} from 'react'
 import axios from "axios";
 
 
@@ -12,12 +12,14 @@ function ContactsData(props) {
             axios.get("https://jsonplaceholder.typicode.com/users").then(response => {
 
                 const myContacts = response.data.map(element=>{
+                    const Minutes = new Date().getMinutes() < 10 ? "0"+ new Date().getMinutes() : new Date().getMinutes() ;
                     return{
                         ...element , 
-                        profileImage : "http://placekitten.com/g/200/300"
+                        profileImage : "http://placekitten.com/g/200/300",
+                        lastMessageTime : `${new Date().getHours()}:${Minutes}`,
                     }
                 })
-                setContacts(myContacts);
+                setContacts([...myContacts , ...myContacts]);
             }).catch(error => {
                 console.log("the Error for the Contacts Request", error);
             }, [])

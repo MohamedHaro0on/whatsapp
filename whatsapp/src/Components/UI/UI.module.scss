@@ -49,11 +49,11 @@
 // Starting the SideBar.
 
 .SideBarContainer{
-    min-height : 100% ;
     position : absolute ;
-    top : 0px ;
     width :100% ;
     background-color : $mainGrayColor; 
+    top : 0px; 
+    height : 105.3% ;
     .SideBarTitle{
         background-color : $mainGreenColor ;
         margin : 0px ;
