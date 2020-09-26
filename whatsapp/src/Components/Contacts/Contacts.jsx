@@ -7,7 +7,6 @@ function Contacts() {
 
     const [ContactsOpened, toggleContacts] = useState(true);
     function handleContactsToggle() {
-        console.log("object", ContactsOpened)
         toggleContacts(prevState => !prevState);
     }
     let appliedClasses = [ClassNames.ContactsContainer,];

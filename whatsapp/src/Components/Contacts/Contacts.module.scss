@@ -1,24 +1,13 @@
 .ContactsContainer {
-    min-width: 30%;
-    height: 100% ;
-    position: absolute;
-    @media (max-width: 1058px) {
-        width: 35%;
-    }
-    @media (max-width: 702px) {
-        width: 40%;
-    }
-    @media (max-width: 611px) {
-        width: 100%;
-    }
+    position : relative ;
 }
 .ContactsOpened {
     @media (max-width: 611px) {
         right: 0px;
     }
 }
-.ContactsClosed {
-    @media (max-width: 611px) {
-        right: 100%;
-    }
-}
+// .ContactsClosed {
+//     @media (max-width: 611px) {
+//         right: 100%;
+//     }
+// }
